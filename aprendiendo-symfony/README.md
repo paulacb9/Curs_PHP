@@ -2,7 +2,7 @@
 
 The files in the next folders are not imported:
 
-    vendor
+- vendor
 
 (in the installation of Laravel will be includeds automaticly)
 
