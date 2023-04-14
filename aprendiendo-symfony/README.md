@@ -2,6 +2,8 @@
 
 The files in the next folders are not imported:
 
+- translations
+- var
 - vendor
 
 (in the installation of Laravel will be includeds automaticly)
@@ -10,6 +12,8 @@ The files in the next folders are not imported:
 
 Los archivos en las siguientas pastas no estan importados:
 
-    vendor
+- translations
+- var
+- vendor
 
 (en la instalación de Laravel seran incluidos automaticamente)
