@@ -1,0 +1,22 @@
+<h1>Funciones</h1>
+{{nombre}}
+    {# Funciones predefinidas #}
+    {{ 'Numero minimo de una array: ' ~ min([9,11,6,99,2])}}<br/>
+    {{ 'Numero maximo de una array: ' ~ max([9,11,6,99,2])}}<br/>
+    {{ 'Valor aleatorio de array: ' ~ random(animales) }}<br/>
+    
+    {% for i in range(0, 100, 5) %}
+        {{i}}<br/>
+    {% endfor %}
+
+<h1>Filtros</h1>
+    {# Limpiar espacios, convertir en mayuscula, minuscula #}
+    {{animales|length}}
+
+    {% set email = '    pcordonb@gmail.com     ' %}
+    {{ dump(email|trim|upper|lower) }}
+
+<h1>Extensiones personalizadas</h1>
+    {# Filtro 'raw' aplica codigo html #}
+    {{ multiplicar(5)|raw }}
+    {{ 12|multiplicar|raw }}

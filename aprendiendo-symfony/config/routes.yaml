@@ -1,0 +1,28 @@
+index:
+    path: /inicio
+    controller: App\Controller\HomeController::index
+
+animales:
+    path: /animales/{nombre}/{apellidos}
+    controller: App\Controller\HomeController::animales
+    defaults: { nombre: 'Paula', apellidos: 'Cordon Blanch' }
+    methods: [GET]
+    requirements:
+      nombre: '[a-zA-Z ]+'
+      apellidos: '[a-zA-Z ]+'
+
+redirigir:
+    path: /redirigir
+    controller: App\Controller\HomeController::redirigir
+
+animal_index:
+    path: /animal/index
+    controller: App\Controller\AnimalController::index
+
+animal_save:
+    path: /animal/save
+    controller: App\Controller\AnimalController::save
+
+animal_details:
+    path: /animal/{id}
+    controller: App\Controller\AnimalController::animal

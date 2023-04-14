@@ -1,0 +1,22 @@
+{# Bucle #}
+    {% if animales|length >= 0 %}
+        <ul>
+            {% for animal in animales %}
+                <li>
+                    {{animal}}
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    {% for i in 0..animales|length %}
+        {{i}}<br />
+    {% endfor %}
+
+    {% for i in 0..animales|length - 1 %}
+        {{animales[i]}}<br />
+    {% endfor %}
+
+    {% if aves.color starts with 'g' %}
+        <h1>Empieza por G</h1>
+    {% endif %}
