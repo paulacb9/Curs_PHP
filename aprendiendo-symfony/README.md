@@ -1,9 +1,15 @@
+# IMPORTANT!!!
 
+The files in the next folders are not imported:
 
-IMPORTANT!!!
+    vendor
 
-The file VENDOR are not imported (in the installation of Symfony will be includeds automaticly)
+(in the installation of Laravel will be includeds automaticly)
 
 //
 
-Los archivos VENDOR no estan importados (en la instalación de Symfony seran incluidos automaticamente)
+Los archivos en las siguientas pastas no estan importados:
+
+    vendor
+
+(en la instalación de Laravel seran incluidos automaticamente)
